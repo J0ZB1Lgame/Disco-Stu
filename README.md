@@ -1,1 +1,1 @@
-# Disco-Stu
+# DiscoStu
