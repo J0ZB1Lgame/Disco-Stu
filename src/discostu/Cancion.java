@@ -10,7 +10,7 @@ public class Cancion {
     private String artista;
     private String album;
     private String genero;
-    private Double duracion;
+    private Double duracion; 
     
     
     public Cancion(String nombre, String artista, String album, String genero, Double duracion) {
