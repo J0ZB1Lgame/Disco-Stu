@@ -9,8 +9,8 @@ public class DiscoStu {
     static Setlis setlis = new Setlis();
     static MP3 mp3 = new MP3();
     static Cancion cancion = new Cancion();
-    
-    
+
+
     public static void main(String[] args) {
       int opcion;
         do {
