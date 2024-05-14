@@ -14,7 +14,7 @@ public class DiscoStu {
     public static void main(String[] args) {
       int opcion;
         do {
-            System.out.println("--- Sistema Parqueadero ---");
+            System.out.println("--- Bienvenido a DiscoStu ---");
             System.out.println("0. Salir");
             System.out.println("1. Crear cancion");
             System.out.println("2. Agregar cancion a la biblioteca");
