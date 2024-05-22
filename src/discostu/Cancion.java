@@ -2,9 +2,6 @@
 package discostu;
 
 public class Cancion {
-    
-    public Cancion() {
-    }
 
     private String nombre;
     private String artista;
@@ -12,6 +9,8 @@ public class Cancion {
     private String genero;
     private Double duracion;
     
+    public Cancion() {
+    }
     
     public Cancion(String nombre, String artista, String album, String genero, Double duracion) {
         this.nombre = nombre;
@@ -69,7 +68,7 @@ public class Cancion {
        
         return "Nombre: " + nombre + " " +
                "Artista: " + artista + " " +
-               "Albun: " + album + " " +
-               "Genero: " + genero + " " + "Duracion: " + duracion;
+               "Álbum: " + álbum + " " +
+               "Género: " + género + " " + "Duración: " + duración;
     }
 }
