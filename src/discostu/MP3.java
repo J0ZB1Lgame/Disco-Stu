@@ -1,23 +1,29 @@
+
 package discostu;
+
+//import java.util.Arrays;
 
 public class MP3 {
 
-    private Setlis [] setlist;
+    private Setlist [] setlist;
     public int volumen;
-    
-    
+
+
     public MP3 () {
-        this.setlist = new Setlis[4];
-        for (int i = 0; i < 5; i++) {
-            setlist[i] = new Setlis(i);
+        this.setlist = new Setlist[4];
+        for (int i = 0; i < 4; i++) {
+            setlist[i] = new Setlist(i);
         }
     }
-    
+
     public void crearCancion(Cancion cancion, int lista) {
-        // TODO implement here
+        Setlist biblio = setlist [lista];
+        biblio.agregarCancion(cancion, lista);
+        
+        
     }
 
-    public Setlis agregarBiblioteca(int id) {
+    public Setlist agregarBiblioteca(int id) {
         // TODO implement here
         return null;
     }
@@ -47,9 +53,17 @@ public class MP3 {
 
     }
 
-    public void mostrarMP3() {
-        // TODO implement here
-
+    public void mostrarMP3(int id) {
+        
+        for (int i = 0; i < setlist.length; i++) {
+            Setlist lista = setlist[i];
+            if (lista.getId() == id){
+                for (int j = 0; j < lista.getCancion().length; j++){
+                     System.out.println(lista.getCancion()[j]);   
+                     System.out.println();
+                }
+            }
+        }
     }
 
     public Cancion avanzarYRetrocederCancion(String nombre) {
