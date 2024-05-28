@@ -11,7 +11,7 @@ public class MP3 {
 //------------------------------------------------------------------------------
     
     /**
-     * declaracion del tamaño del arreglo 
+     * declaración del tamaño del arreglo 
      * en este caso el MP3 permite el acceso a 4 listas ya establecidas como: 0 = nuevas canciones, 1 = favoritas, 2 = tristes y 3 = amor
      */
     
@@ -25,10 +25,10 @@ public class MP3 {
 //------------------------------------------------------------------------------    
     
     /**
-     * luego de ingresar los datos de la cancion, este metodo agrega la cancion a la lista selecionada anteriormente 
-     * tambien agrega la cancion a otra lista cuando se desea mover
-     * @param cancion son los datos de la nueva cancion ingresada anteriormente 
-     * @param lista es el id del arreglo, en este caso es la posicion a la cual es agregada la cancion 
+     * luego de ingresar los datos de la canción, este método agrega la canción a la lista selecionada anteriormente 
+     * también agrega la canción a otra lista cuando se desea mover
+     * @param cancion son los datos de la nueva canción ingresada anteriormente 
+     * @param lista es el id del arreglo, en este caso es la posición a la cual es agregada la cancion 
      */
     
     public void crearCancion(Cancion cancion, int lista) {
@@ -39,10 +39,10 @@ public class MP3 {
 //------------------------------------------------------------------------------    
     
     /**
-     * en este arreglo lo que se busca es mover una cancion de una lista a otra ya ingresada por el usuario 
-     * @param nombre es el nombre de la cancion que se ingreso por el usuario y posteriormente se cambiara de posicion
-     * @param id es la posicion de la lista a la cual se movera la cancion
-     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
+     * en este arreglo lo que se busca es mover una canción de una lista a otra ya ingresada por el usuario 
+     * @param nombre es el nombre de la canción que se ingreso por el usuario y posteriormente se cambiara de posición
+     * @param id es la posición de la lista a la cual se movera la canción
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la acción
      */
     
     public void moverCancion(String nombre, int id) throws InterruptedException {
@@ -98,8 +98,8 @@ public class MP3 {
 //------------------------------------------------------------------------------    
 
     /**
-     * en este metodo se imprime las canciones de una lista determinada por el usuario
-     * @param id es la posicion de la lista la cual se imprimira 
+     * en este método se imprime las canciones de una lista determinada por el usuario
+     * @param id es la posición de la lista la cual se imprimirá
      */
     
     public void mostrarMP3(int id) {
@@ -118,9 +118,9 @@ public class MP3 {
 //------------------------------------------------------------------------------    
 
     /**
-     * la idea principal de este metodo es iniciar pausar o reanudar una cancion ya establecida por el usuario 
-     * @param nombre es el nombre de la cancion la cual fue introduccida por el usuario 
-     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
+     * la idea principal de este método es iniciar pausar o reanudar una canción ya establecida por el usuario 
+     * @param nombre es el nombre de la canción la cual fue introducida por el usuario 
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la acción
      */
     
     public void iniciarPausarYReanudar(String nombre) throws InterruptedException {
@@ -145,10 +145,10 @@ public class MP3 {
 //------------------------------------------------------------------------------    
     
     /**
-     * la idea principal de este metodo es avanzar de cancion dentro de la misma lista o retroceder a la anterior, esto por posiciones del arreglo 
-     * @param direccion parametro para saber si se avanza o se retrocede 
+     * la idea principal de este método es avanzar de canción dentro de la misma lista o retroceder a la anterior, esto por posiciones del arreglo 
+     * @param direccion parámetro para saber si se avanza o se retrocede 
      * @return se retorna null para iniciar de nuevo el ingreso de los datos como 'avanzar' o 'retroceder'
-     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la accion
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la acción
      */
     
     public Cancion avanzarYRetrocederCancion(String direccion) throws InterruptedException {
@@ -182,7 +182,7 @@ public class MP3 {
         return null;
 }
  /**
-  * en este metodo se busca la lista de la cancion actual 
+  * en este método se busca la lista de la canción actual 
   * @param id posicion de la lista 
   * @return se retorna la lista de las canciones 
   */
@@ -205,8 +205,8 @@ public int getIndexCancionActual(Cancion[] listaCanciones) {
 //------------------------------------------------------------------------------
 
 /**
- * metodo para el control de volumen
- * @param nVolumen variable global para el volumen del MP3
+ * metodo para el control de volúmen
+ * @param nVolumen variable global para el volúmen del MP3
  */
 
     public void controlarVolumen(int nVolumen) {
@@ -223,10 +223,10 @@ public int getIndexCancionActual(Cancion[] listaCanciones) {
 //------------------------------------------------------------------------------    
     
     /**
-     * metodo para busqueda de canciones 
-     * @param nombre es el nombre de la cancion ingresada por el usuario
-     * @return retorna la posicion de la lista de la cancion buscada
-     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la accion
+     * método para búsqueda de canciones 
+     * @param nombre es el nombre de la canción ingresada por el usuario
+     * @return retorna la posición de la lista de la canción buscada
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la acción
      */
     
     public int buscarCancion(String nombre) throws InterruptedException {
@@ -248,7 +248,7 @@ public int getIndexCancionActual(Cancion[] listaCanciones) {
 //------------------------------------------------------------------------------    
 
     /**
-     * en este metodo se eliminirara una cancion deseada 
+     * en este método se eliminará una canción deseada 
      * @param nombre es la variable la cual ingresa el usuario el nombre por teclado 
      * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
      */
