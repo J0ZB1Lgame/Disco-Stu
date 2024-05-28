@@ -162,8 +162,19 @@ public class DiscoStu {
     
 //------------------------------------------------------------------------------    
     
-    public static void buscarCancion (){
+     public static void buscarCancion (){
         
+        System.out.println("Ingrese la biblioteca donde tiene la cancion");
+        System.out.println("1. Nuevas canciones");
+        System.out.println("2. Favoritas");
+        System.out.println("3. Triste");
+        System.out.println("4. Amor");
+        int numBiblio = Integer.parseInt(sc.nextLine())-1;
+        System.out.println("Ingrese el nombre de la cancion");
+        String nombre = sc.nextLine();
+        
+        Cancion c = mp3.buscarCancion(nombre, numBiblio);
+        System.out.println(c.toString());
     }
     
 //------------------------------------------------------------------------------    
