@@ -20,12 +20,12 @@ public class Cancion {
 //------------------------------------------------------------------------------    
     
     /**
-     * datos de la cancion 
-     * @param nombre nombre de la cancion 
-     * @param artista cantante dueño de la cancion 
-     * @param album album donde se publico el la cancion
-     * @param genero genero musical de la cancion
-     * @param duracion duracion total de la cancion 
+     * datos de la canción 
+     * @param nombre nombre de la canción 
+     * @param artista cantante dueño de la canción 
+     * @param album album donde se publicó la canción
+     * @param genero género musical de la canción
+     * @param duracion duración total de la canción 
      */
     
     public Cancion(String nombre, String artista, String album, String genero, Double duracion) {
@@ -49,7 +49,7 @@ public class Cancion {
 
     /**
      * 
-     * @param nombre nombre de la cancion 
+     * @param nombre nombre de la canción 
      */
     
     public void setNombre(String nombre) {
@@ -67,7 +67,7 @@ public class Cancion {
     
     /**
      * 
-     * @param artista cantante dueño de la cancion
+     * @param artista cantante dueño de la canción
      */
 
     public void setArtista(String artista) {
@@ -85,7 +85,7 @@ public class Cancion {
     
     /**
      * 
-     * @param album albun donde se publico la cancion
+     * @param album album donde se publicó la canción
      */
 
     public void setAlbum(String album) {
@@ -103,7 +103,7 @@ public class Cancion {
     
     /**
      * 
-     * @param genero genero musical de la cancion
+     * @param genero genero musical de la canción
      */
 
     public void setGenero(String genero) {
@@ -121,7 +121,7 @@ public class Cancion {
     
     /**
      * 
-     * @param duracion duracion total de la cancion
+     * @param duracion duración total de la canción
      */
 
     public void setDuracion(Double duracion) {
@@ -132,7 +132,7 @@ public class Cancion {
     
     /**
      * 
-     * @return nombre de la cancion
+     * @return nombre de la canción
      */
     
     public String consultarNombre() {
@@ -142,7 +142,7 @@ public class Cancion {
 //------------------------------------------------------------------------------    
 
     /**
-     * metodo para declarar que se esta reproduciendo la cancion 
+     * método para declarar que se esta reproduciendo la canción 
      */
     
     public void iniciarReproduccion() { 
@@ -152,7 +152,7 @@ public class Cancion {
     }
     
     /**
-     * metodo para declarar que se pauso la cancion 
+     * método para declarar que se pausó la canción 
      */
 
     public void pausarReproduccion() {
@@ -167,7 +167,7 @@ public class Cancion {
 
     /**
      * 
-     * @return retorna la reproduccion de una cancion 
+     * @return retorna la reproducción de una canción 
      */
     
     public boolean estaEnReproduccion() {
@@ -184,7 +184,7 @@ public class Cancion {
     }
     
     /**
-     * metodo para declarar que se pauso la cancion
+     * método para declarar que se pausó la canción
      */
 
     public void detenerReproduccion() {
@@ -197,7 +197,7 @@ public class Cancion {
     
     /**
      * 
-     * @return datos de la cancion 
+     * @return datos de la canción 
      */
     
     public String toString() {
