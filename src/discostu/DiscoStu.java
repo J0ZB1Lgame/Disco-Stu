@@ -3,10 +3,20 @@ package discostu;
 
 import java.util.Scanner;
 
+/**
+ * @author  Josel Patiño - Miguel Correa - Leonardo Tolosa
+*/
+
 public class DiscoStu {
     
     static Scanner sc = new Scanner(System.in);
     static MP3 mp3 = new MP3();    
+    
+    /**
+     * En este metodo se despliega el menu principal del MP3
+     * @param args
+     * @throws InterruptedException 
+     */
     
     public static void main(String[] args) throws InterruptedException {
       int opcion;
@@ -76,9 +86,11 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
-    
+    /**
+     * En este metodo se crea una cancion y se agrega a un alista de reproduccion 
+    */
     public static void crearCancion (){
-      
+        
         System.out.println("---------------------------------------------------");
         System.out.println("Crear cancion");
         System.out.print("Ingrese los datos separados por - en el orden nombre - artista - album - genero - duracion min.seg: ");
@@ -107,6 +119,9 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
+    /**
+     * En este metodo se mueve la cancion a otras listas
+    */
     
     public static void agregarABiblioteca () throws InterruptedException{
         
@@ -126,6 +141,10 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
+    
+    /**
+     * En este metodo se imprimen las canciones de una lista deseada
+    */
     
     public static void listaCanciones (){
         
@@ -160,6 +179,10 @@ public class DiscoStu {
     
 //------------------------------------------------------------------------------    
     
+    /**
+     * En este metodo se inicia, pausa o reanuda una cancion deseada
+    */
+    
     public static void iniciarPausarReanudar () throws InterruptedException{
         
         System.out.println("---------------------------------------------------");
@@ -172,6 +195,10 @@ public class DiscoStu {
     
 //------------------------------------------------------------------------------    
     
+    /**
+     * En este metodo se avanza o retrocede una cancion de la lista la cual se este reproduciendo
+    */
+    
     public static void avanzarRetroceder () throws InterruptedException{
         
         System.out.println("---------------------------------------------------");
@@ -182,6 +209,10 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
+    
+    /**
+     * En este metodo se controla el volumen del MP3
+    */
     
     public static void controlarVolumen (){
         
@@ -194,6 +225,10 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
+    
+    /**
+     * En este metodo se crea una cancion y se agrega a un alista de reproduccion
+    */
     
     public static void buscarCancion () throws InterruptedException{
         
@@ -220,6 +255,10 @@ public class DiscoStu {
     }
     
 //------------------------------------------------------------------------------    
+    
+    /**
+     * En este metodo elimina una cancion determinada por el usuario
+    */
     
     public static void eliminarCancion () throws InterruptedException{
         System.out.println("---------------------------------------------------");
