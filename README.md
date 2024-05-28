@@ -32,11 +32,11 @@ Al ejecutar la aplicación, verás un menú con las siguientes opciones:
 
 - `0. Salir`: Cierra la aplicación.
 - `1. Crear canción`: Crea una nueva canción y la agrega a una biblioteca seleccionada.
-- `2. Agregar canción a la biblioteca`: (Funcionalidad pendiente de implementación).
+- `2. Agregar canción a la biblioteca`: Agrega la canción a una biblioteca seleccionada.
 - `3. Mostrar Lista de canciones`: Muestra las canciones en una biblioteca seleccionada.
-- `4. Pausar y reanudar la reproducción`: (Funcionalidad pendiente de implementación).
-- `5. Avanzar y retroceder la canción`: (Funcionalidad pendiente de implementación).
-- `6. Controlar el volúmen`: (Funcionalidad pendiente de implementación).
+- `4. Pausar y reanudar la reproducción`: Muestra la reproducción en pausa y también reanudada por medio de Boolean.
+- `5. Avanzar y retroceder la canción`: Muestra si avanza o retrocede la reproducción con Boolean.
+- `6. Controlar el volúmen`: Es una variable global que muestra números del 1 al 5 representando el nivel del volúmen.
 - `7. Buscar canción por nombre`: Busca una canción por nombre en una biblioteca seleccionada.
 - `8. Eliminar canción`: Elimina una canción por nombre de una biblioteca seleccionada.
 
