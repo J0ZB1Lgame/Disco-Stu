@@ -28,9 +28,24 @@ public class MP3 {
         return null;
     }
 
-    public Cancion buscarCancion(String nombre) {
+    public Cancion buscarCancion(String nombre, int id) {
         // TODO implement here
-        return null;
+        
+        Cancion[] temp= null;
+        Cancion encontrada =new Cancion();
+        //for (int i = 0; i < 4; i++) {
+            System.out.println("buscamos "+nombre+" "+id);
+            
+             temp = this.setlist[id].song;
+                // System.out.println("encontre "+Arrays.toString(this.setlist));
+                 System.out.println("encontre "+this.setlist[0].song[0].getNombre());
+                 
+                 
+                 for (int i = 0; i < setlist[0].totalCanciones; i++) {
+                     {
+                         System.out.println(""+setlist[0].song[i]);
+                     }
+                     
     }
 
     public Cancion reproducirCancion(String nombre) {
