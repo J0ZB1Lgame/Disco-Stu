@@ -1,0 +1,43 @@
+TECNICAS DE PROGRAMACION GR3 2024
+  Leonardo Tolosa - 507232713
+    Jose Patiño - 506232065
+    Miguel Correa - 506232069
+
+
+\\\\\\DISCO STU///////
+
+
+
+-------------JAVA DOC--------------
+
+link: file:///D:/konrad%20lorenz/2%20Semestre/Tecnicas%20de%20programacion/1%20proyecto%20fin/ProyectoFinalProgramaci%C3%B3n/discoStu/dist/javadoc/discostu/package-summary.html
+
+-------------GITHUB REPOSITORY--------------
+
+link: https://github.com/J0ZB1Lgame/Disco-Stu.git
+
+-------------BASE DE DATOS--------------
+
+nueva lista 
+
+1 Suavemente-Elvis-Tierra-Merengue-3.40
+2 Sonrisa-Elvis-Tierra-Merengue-2.35
+3 Eterno-Elvis-Tierra-Salsa-4.50
+
+favoritas
+
+1 Te amo-Miguel-Amor-Brutal Metal-3.10
+2 Despertar-Miguel-Amor-Brutal Metal-3.50
+3 Desesperado-Miguel-Amor-Brutal Metal-3.10
+
+tristes
+
+1 Pensandote-Josel-Kenopsia-Reggae-2.50
+2 Volando-Josel-Kenopsia-Reggae-4.20
+3 Volvere-Josel-Kenopsia-Reggae-2.40
+
+amor
+
+1 Distancia-Leonardo-Final-Valadas-2.45
+2 Me gustas-Leonardo-Final-Valadas-2.30
+3 Cumbanchero-Leonardo-Final-Valadas-3.50
