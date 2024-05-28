@@ -63,4 +63,6 @@ Este proyecto está licenciado bajo la Licencia Apache 2.0.
 
 ## Autores
 
-Este proyecto fue creado por Leonardo Tolosa, Josel Patiño, Miguel Correa
+- **Leonardo Tolosa** - 507232713
+- **Josel Patiño** - 506232065
+- **Miguel Correa** - 506232069
