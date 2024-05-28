@@ -13,8 +13,8 @@ public class Setlis {
 //------------------------------------------------------------------------------    
 
     /**
-     * metodo para la declaracion del tamaño del arreglo
-     * @param id es la posicion de la lista 0 = nuevas canciones, 1 = favoritas, 2 = tristes y 3 = amor
+     * método para la declaración del tamaño del arreglo
+     * @param id es la posición de la lista 0 = nuevas canciones, 1 = favoritas, 2 = tristes y 3 = amor
      */
     
     public Setlis (int id) {
@@ -25,9 +25,9 @@ public class Setlis {
 //------------------------------------------------------------------------------    
     
     /**
-     * luego de ingresar la cancion, este metodo agrega la cancion en una posicion dentro de la lista 
-     * @param cancion los datos de la cancion a ingresar 
-     * @param id la posicion de la lista 
+     * luego de ingresar la canción, este método agrega la canción en una posición dentro de la lista 
+     * @param canción los datos de la canción a ingresar 
+     * @param id la posición de la lista 
      */
     
     public void agregarCancion(Cancion cancion, int id ) {
@@ -58,7 +58,7 @@ public class Setlis {
 //------------------------------------------------------------------------------    
     
     /**
-     * id de la pocion de la cancion 
+     * id de la posición de la canción 
      * @return posicion
      */
     
@@ -67,8 +67,8 @@ public class Setlis {
     }
 
     /**
-     * cambio de posicion
-     * @param id posicion de la cancion
+     * cambio de posición
+     * @param id posición de la canción
      */
     
     public void setId(int id) {
@@ -77,7 +77,7 @@ public class Setlis {
 
     /**
      * total de canciones dentro de la lista 
-     * @return numero de canciones posibles de la lista 
+     * @return número de canciones posibles de la lista 
      */
     
     public int getTotalCanciones() {
@@ -94,7 +94,7 @@ public class Setlis {
     }
 
     /**
-     * datos de la cancion 
+     * datos de la canción 
      * @return 
      */
     
@@ -114,9 +114,9 @@ public class Setlis {
 //------------------------------------------------------------------------------    
 
     /**
-     * se utiliza este metodo para buscar la cancion dentro de la lista
-     * @param nombre nombre de la cancion a buscar, este nombre fue el ingresado por el usuario
-     * @return los datos de la cancion 
+     * se utiliza este método para buscar la canción dentro de la lista
+     * @param nombre nombre de la canción a buscar, este nombre fue el ingresado por el usuario
+     * @return los datos de la canción 
      */
     
     public Cancion buscarCancion(String nombre) {
@@ -132,9 +132,9 @@ public class Setlis {
 //------------------------------------------------------------------------------    
     
     /**
-     * metodo para eliminar una cancion determiada dentro de la lista
+     * método para eliminar una canción determiada dentro de la lista
      * @param nombre como variable para buscar y eliminar, este nombre fue el ingresado por el usuario
-     * @return datos de la cancion eliminada
+     * @return datos de la canción eliminada
      */
     
     public Cancion eliminarCancion(String nombre) {
