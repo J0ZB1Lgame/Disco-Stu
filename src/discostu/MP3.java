@@ -10,6 +10,11 @@ public class MP3 {
 
 //------------------------------------------------------------------------------
     
+    /**
+     * declaracion del tamaño del arreglo 
+     * en este caso el MP3 permite el acceso a 4 listas ya establecidas como: 0 = nuevas canciones, 1 = favoritas, 2 = tristes y 3 = amor
+     */
+    
     public MP3 () {
         this.setlist = new Setlis[4];
         for (int i = 0; i < 4; i++) {
@@ -19,12 +24,26 @@ public class MP3 {
     
 //------------------------------------------------------------------------------    
     
+    /**
+     * luego de ingresar los datos de la cancion, este metodo agrega la cancion a la lista selecionada anteriormente 
+     * tambien agrega la cancion a otra lista cuando se desea mover
+     * @param cancion son los datos de la nueva cancion ingresada anteriormente 
+     * @param lista es el id del arreglo, en este caso es la posicion a la cual es agregada la cancion 
+     */
+    
     public void crearCancion(Cancion cancion, int lista) {
         Setlis biblio = setlist [lista];
         biblio.agregarCancion(cancion, lista);             
     }
 
 //------------------------------------------------------------------------------    
+    
+    /**
+     * en este arreglo lo que se busca es mover una cancion de una lista a otra ya ingresada por el usuario 
+     * @param nombre es el nombre de la cancion que se ingreso por el usuario y posteriormente se cambiara de posicion
+     * @param id es la posicion de la lista a la cual se movera la cancion
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
+     */
     
     public void moverCancion(String nombre, int id) throws InterruptedException {
         
@@ -78,6 +97,11 @@ public class MP3 {
     
 //------------------------------------------------------------------------------    
 
+    /**
+     * en este metodo se imprime las canciones de una lista determinada por el usuario
+     * @param id es la posicion de la lista la cual se imprimira 
+     */
+    
     public void mostrarMP3(int id) {
         
         for (int i = 0; i < setlist.length; i++) {
@@ -93,6 +117,12 @@ public class MP3 {
     
 //------------------------------------------------------------------------------    
 
+    /**
+     * la idea principal de este metodo es iniciar pausar o reanudar una cancion ya establecida por el usuario 
+     * @param nombre es el nombre de la cancion la cual fue introduccida por el usuario 
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
+     */
+    
     public void iniciarPausarYReanudar(String nombre) throws InterruptedException {
         
         Setlis setlis = setlist[buscarCancion(nombre)];
@@ -114,12 +144,18 @@ public class MP3 {
     
 //------------------------------------------------------------------------------    
     
+    /**
+     * la idea principal de este metodo es avanzar de cancion dentro de la misma lista o retroceder a la anterior, esto por posiciones del arreglo 
+     * @param direccion parametro para saber si se avanza o se retrocede 
+     * @return se retorna null para iniciar de nuevo el ingreso de los datos como 'avanzar' o 'retroceder'
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la accion
+     */
+    
     public Cancion avanzarYRetrocederCancion(String direccion) throws InterruptedException {
     
         
         if (cancionActual == null) {
         System.out.println("No se esta reproduciendo ninguna cancion actualmente.");
-        return null;
     }
         System.out.println("cancion reproduciendose actualmente");
         Cancion[] listaCanciones = getCancionesEnLista(buscarCancion(cancionActual.getNombre()));
@@ -145,13 +181,18 @@ public class MP3 {
     }
         return null;
 }
-
-private Cancion[] getCancionesEnLista(int id) {
+ /**
+  * en este metodo se busca la lista de la cancion actual 
+  * @param id posicion de la lista 
+  * @return se retorna la lista de las canciones 
+  */
+public Cancion[] getCancionesEnLista(int id) {
     Setlis lista = setlist[id];
     return lista.getCancion();
 }
 
-private int getIndexCancionActual(Cancion[] listaCanciones) {
+
+public int getIndexCancionActual(Cancion[] listaCanciones) {
     for (int i = 0; i < listaCanciones.length; i++) {
         if (listaCanciones[i] != null && listaCanciones[i].equals(cancionActual)) {
             return i;
@@ -162,6 +203,11 @@ private int getIndexCancionActual(Cancion[] listaCanciones) {
 
     
 //------------------------------------------------------------------------------
+
+/**
+ * metodo para el control de volumen
+ * @param nVolumen variable global para el volumen del MP3
+ */
 
     public void controlarVolumen(int nVolumen) {
         System.out.println("volumen actual: " + volumen);
@@ -175,6 +221,13 @@ private int getIndexCancionActual(Cancion[] listaCanciones) {
     }
     
 //------------------------------------------------------------------------------    
+    
+    /**
+     * metodo para busqueda de canciones 
+     * @param nombre es el nombre de la cancion ingresada por el usuario
+     * @return retorna la posicion de la lista de la cancion buscada
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realizando la accion
+     */
     
     public int buscarCancion(String nombre) throws InterruptedException {
         int i = 0;
@@ -194,6 +247,12 @@ private int getIndexCancionActual(Cancion[] listaCanciones) {
     
 //------------------------------------------------------------------------------    
 
+    /**
+     * en este metodo se eliminirara una cancion deseada 
+     * @param nombre es la variable la cual ingresa el usuario el nombre por teclado 
+     * @throws InterruptedException determinamos un tiempo para darle un poco de realismo a el proyecto, esto declarando que se esta realiando la accion
+     */
+    
     public void eliminarCancion(String nombre) throws InterruptedException {
         Setlis lista = setlist[buscarCancion(nombre)];
         Cancion cancion = lista.eliminarCancion(nombre);
