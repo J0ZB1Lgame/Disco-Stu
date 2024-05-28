@@ -138,7 +138,7 @@ public class MP3 {
                 cancionActual.pausarReproduccion();
             }
         } else {
-            System.out.println("La canción \"" + nombre + "\" no se encontró.");
+            System.out.println("La canción " + nombre + " no se encontró.");
         }
     }
     
